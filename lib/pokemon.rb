@@ -1,13 +1,13 @@
 class Pokemon
 
-  attr_accessor :name, :type, :db
+  attr_accessor :name, :type, :db, :id
 
   @@all = []
 
-  def iniitalize(name, type, id nil)
+  def iniitalize(name, type, id= nil, db)
     @name = name
     @type = type
-    
+    @db = db
     @id = id
     @@all << self
   end
@@ -36,5 +36,5 @@ class Pokemon
 
     DB[:conn].execute(sql,self.name,self.type)
   end
-  
+
 end
