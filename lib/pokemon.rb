@@ -9,7 +9,7 @@ class Pokemon
     @type = type
     @db = db
     @id = id
-
+    #Pokemon.save
   end
 
 
