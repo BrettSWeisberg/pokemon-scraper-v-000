@@ -4,10 +4,10 @@ class Pokemon
 
   @@all = []
 
-  def iniitalize(name, type, db)
+  def iniitalize(name, type, Scraper.db)
     @name = name
     @type = type
-    @db = db
+    @db = Scraper.db
     @@all << self
   end
 
