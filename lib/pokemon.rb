@@ -2,19 +2,17 @@ class Pokemon
 
   attr_accessor :name, :type, :db, :id
 
-  @@all = []
+  
 
   def iniitalize(name, type, id= nil, db)
     @name = name
     @type = type
     @db = db
     @id = id
-    @@all << self
+    Pokemon.save
   end
 
-  def self.all
-    @@all
-  end
+  
 
   def self.create_table
     sql =  <<-SQL
