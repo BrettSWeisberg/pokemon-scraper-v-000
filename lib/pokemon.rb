@@ -35,6 +35,8 @@ class Pokemon
     SQL
 
     DB[:conn].execute(sql,self.name,self.type)
+
+    @id = DB[:conn].execute("SELECT last_inserted() FROM pokemon")[0][0]
   end
 
 end
