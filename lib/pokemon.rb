@@ -32,7 +32,7 @@ class Pokemon
     VALUES (?,?,?)
     SQL
 
-    db.execute(sql,name,type,db)
+    db.execute(name,type)
 
   #  @id = DB[:conn].execute("SELECT last_inserted() FROM pokemon")[0][0]
   end
