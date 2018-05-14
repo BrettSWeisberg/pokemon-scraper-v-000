@@ -4,10 +4,11 @@ class Pokemon
 
   @@all = []
 
-  def iniitalize(name, type, db)
+  def iniitalize(name, type, id nil)
     @name = name
     @type = type
-    @db = db
+    
+    @id = id
     @@all << self
   end
 
