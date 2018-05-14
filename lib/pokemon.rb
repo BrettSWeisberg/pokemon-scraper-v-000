@@ -2,7 +2,7 @@ class Pokemon
 
   attr_accessor :name, :type, :db, :id
 
-  
+
 
   def iniitalize(name, type, id= nil, db)
     @name = name
@@ -12,7 +12,7 @@ class Pokemon
     Pokemon.save
   end
 
-  
+
 
   def self.create_table
     sql =  <<-SQL
