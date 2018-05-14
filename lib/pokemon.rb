@@ -28,13 +28,13 @@ class Pokemon
 
   def save
     sql =  <<-SQL
-    INSERT INTO pokemon(name,type)
-    VALUES (?,?)
+    INSERT INTO pokemon(name,type, db)
+    VALUES (?,?,?)
     SQL
 
-    DB[:conn].execute(sql,self.name,self.type)
+    DB[:conn].execute(sql,self.name,self.type, self.db)
 
-    @id = DB[:conn].execute("SELECT last_inserted() FROM pokemon")[0][0]
+  #  @id = DB[:conn].execute("SELECT last_inserted() FROM pokemon")[0][0]
   end
 
 end
