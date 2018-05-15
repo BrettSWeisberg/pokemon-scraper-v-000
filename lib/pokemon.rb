@@ -38,7 +38,7 @@ class Pokemon
   end
 
   def self.find(id, db)
-    
+    binding.pry
     sql =  <<-SQL
     SELECT name FROM db WHERE id = ?
     SQL
