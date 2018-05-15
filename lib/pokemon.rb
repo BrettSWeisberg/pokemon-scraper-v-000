@@ -38,9 +38,10 @@ class Pokemon
   end
 
   def self.find(id, db)
-  
+    binding.pry
+  local_db = db.execute("SELECT name FROM pokeman  WHERE id = ?",id)
     sql =  <<-SQL
-    SELECT name FROM db.execute(sql,name) WHERE id = ?
+    
     SQL
   end
 
