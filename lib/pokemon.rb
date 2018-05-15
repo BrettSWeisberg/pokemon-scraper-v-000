@@ -39,7 +39,7 @@ class Pokemon
 
   def self.find(id, db)
     sql =  <<-SQL
-    SELECT id FROM db
+    SELECT name FROM db WHERE id = id
     SQL
   end
 
