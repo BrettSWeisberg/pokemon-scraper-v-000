@@ -41,7 +41,7 @@ class Pokemon
     binding.pry
   local_db = db.execute("SELECT * FROM pokemon  WHERE id = ?",id).flatten
    Pokemon.new(id:local_db[0],name:local_db[1],type:local_db[2])
-  (id: 1, name: "Pikachu", type: "electric", db: @db)}
+
 
   end
 
