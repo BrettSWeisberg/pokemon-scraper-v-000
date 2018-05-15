@@ -37,7 +37,7 @@ class Pokemon
   #  @id = DB[:conn].execute("SELECT last_inserted() FROM pokemon")[0][0]
   end
 
-  #def self.find(name)
-  #end
+  def self.find(id, db)
+  end
 
 end
