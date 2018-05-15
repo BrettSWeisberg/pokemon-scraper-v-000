@@ -41,7 +41,7 @@ class Pokemon
     binding.pry
   local_db = db.execute("SELECT name FROM pokeman  WHERE id = ?",id)
     sql =  <<-SQL
-    
+
     SQL
   end
 
